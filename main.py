@@ -1,14 +1,25 @@
-import os
-import requests
+import json
+import time
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+from telegram_bot import send_message
+from config import CHECK_INTERVAL
 
-url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+last_status = {}
 
-requests.post(url, data={
-    "chat_id": CHAT_ID,
-    "text": "✅ ZEUS-STOCK-20 Test Successful!"
-})
+while True:
+    with open("products.json", "r") as f:
+        products = json.load(f)
 
-print("Message Sent")
+    for product in products:
+        in_stock = product.get("stock", False)
+
+        if in_stock and not last_status.get(product["id"], False):
+            send_message(
+                f"🔥 Stock Alert!\n\n"
+                f"📦 {product['name']}\n"
+                f"🔗 {product['url']}"
+            )
+
+        last_status[product["id"]] = in_stock
+
+    time.sleep(CHECK_INTERVAL)
