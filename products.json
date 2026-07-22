@@ -2,7 +2,25 @@
   {
     "id": "FK001",
     "name": "Vivo T4R 5G",
-    "url": "https://dl.flipkart.com/dl/vivo-t4r-5g-arctic-white-128-gb/p/itm3a5653667cb9c?pid=MOBHE49GDEHE3XZD&lid=LSTMOBHE49GDEHE3XZDXHWSUS&marketplace=FLIPKART&hl_lid=&q=t4r+5g&store=tyy/4io&ctx=eyJkZWxpdmVyZWRCeSI6IiIsImRpc3BsYXlQcmljZSI6IjIyOTk5In0=&fm=eyJ3dHAiOiJwcm9kdWN0Q2FyZExpc3QiLCJwcnB0Ijoic3AiLCJtaWQiOiJQUk9EVUNUIn0&_refId=&_appId=CL",
+    "url": "https://dl.flipkart.com/dl/vivo-t4r-5g-arctic-white-128-gb/p/itm3a5653667cb9c?pid=MOBHE49GDEHE3XZD&lid=LSTMOBHE49GDEHE3XZDXHWSUS&marketplace=FLIPKART",
+    "stock": false
+  },
+  {
+    "id": "AM001",
+    "name": "iQOO Z10R 5G",
+    "url": "https://amzn.in/d/03F3IzfV",
+    "stock": false
+  },
+  {
+    "id": "AP001",
+    "name": "Apple Product",
+    "url": "https://www.apple.com/in/shop/product/MG6K4HN/A",
+    "stock": false
+  },
+  {
+    "id": "CR001",
+    "name": "Sony PlayStation 5 Slim 1TB",
+    "url": "https://www.croma.com/sony-playstation-5-slim-1tb-ssd-gaming-console-white-/p/305985",
     "stock": false
   }
 ]
